@@ -10,7 +10,7 @@
 #enlaces a {
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 5px;
     position: relative;
     border-right:5px solid rgb(29, 90, 17);
     border-top:5px solid rgb(29, 90, 17);
@@ -35,7 +35,7 @@
 
 .buscador {
     position: absolute;
-    right: 18%;
+    right: 25%;
     top: 3%;
     border: 3px solid rgb(29, 90, 17);
     height: 33px;
@@ -55,6 +55,21 @@
 
 .buscador:focus{
     outline: none;
+}
+#buscar {
+    position: absolute;
+    text-decoration: none;
+    right: 18%;
+    top: 2%;
+    color: rgb(29, 90, 17);
+    border:5px solid rgb(29, 90, 17);
+    border-radius: 20px;
+    background: black;
+    padding: 5px;
+}
+#buscar:hover {
+    transition: 0.5s;
+
 }
 #buscador-github{
     display: flex;

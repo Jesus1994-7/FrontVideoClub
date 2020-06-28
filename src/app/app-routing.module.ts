@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LastMoviesComponent } from './components/last-movies/last-movies.component';
 import { MostPopularComponent } from './components/most-popular/most-popular.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
 
 
@@ -16,7 +17,9 @@ const routes: Routes = [
   {path: "allmovies", component:ListFilmsComponent},
   {path: "lastmovies", component:LastMoviesComponent},
   {path: "mostpopular", component:MostPopularComponent},
-  {path: "signup", component:RegistroComponent}
+  {path: "signup", component:RegistroComponent},
+  {path: "busqueda", component:BusquedaComponent}
+
 
 ];
 

@@ -10,12 +10,7 @@ export class BusquedaComponent implements OnInit {
 
   constructor(public MoviesService:MoviesService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
-  searchTitle(event){
-    if(event.target.value.lenght >= 3){
-      this.MoviesService.searchMoviesTitle(event.target.value)
-      .subscribe(res=>this.MoviesService.setMovies(res));
-    }
-  }
+  
 }

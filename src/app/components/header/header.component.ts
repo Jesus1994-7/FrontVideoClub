@@ -9,13 +9,13 @@ import { MoviesService } from 'src/app/services/movies/movies.service';
 export class HeaderComponent implements OnInit {
 
 
-  constructor(private MovieService:MoviesService) { }
+  constructor(public MovieService:MoviesService) { }
 
   ngOnInit(): void {
   }
 
   searchTitle(event){
-    if(event.target.value.lenght >= 3){
+    if(event.target.value.length >= 3){
       this.MovieService.searchMoviesTitle(event.target.value)
       .subscribe(res=>this.MovieService.setMovies(res));
     }
