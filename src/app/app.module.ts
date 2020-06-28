@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LastMoviesComponent } from './components/last-movies/last-movies.component';
 import { MostPopularComponent } from './components/most-popular/most-popular.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     HomeComponent,
     LastMoviesComponent,
     MostPopularComponent,
-    RegistroComponent
+    RegistroComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,

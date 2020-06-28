@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="movies">
+
+        <input type="text" name="" id="" placeholder="Título" (keyup) = "searchTitle($event)">
+
+        <div class = "pelicula" *ngFor="let pelicula of MoviesService.getFilms()">
+
+            <br>
+            <a routerLink="/detail" routerLinkActive="active-link">
+                <img width="200"height="288" (click)="MoviesService.locateMovies(pelicula)"
+                src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}" 
+                alt="poster">
+            </a>
+            <p>{{pelicula.title}}</p>
+
+        </div>
+    </div>
+</div>
