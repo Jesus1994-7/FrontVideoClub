@@ -17,12 +17,19 @@ export class MoviesService {
   getMovies():Observable<any>{
     return this.httpClient.get(this.backUrl + 'allmovies')
   }
+  getPopularMovies():Observable<any> {
+    return this.httpClient.get(this.backUrl + 'mostpopular')
+  }
 
   locateMovies(MovieChoose:any):object {
     this.MoviesChoosen = MovieChoose;
     console.log(this.MoviesChoosen)
 
     return;
+  }
+
+  searchMoviesTitle(title:string):Observable<any>{
+    return this.httpClient.get(this.backUrl + 'title/' + title);
   }
 
   setMovies(movies:object[]):void{

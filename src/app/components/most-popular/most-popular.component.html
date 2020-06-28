@@ -1,4 +1,5 @@
 <div class="movies">
+    
     <div class="movie" *ngFor="let pelicula of pelisMostrar">
         <a routerLink="/detail" routerLinkActive="active-link">
             <img width="200" height="288" (click)="MoviesService.locateMovies(pelicula)"
@@ -9,5 +10,3 @@
     </div>
 
 </div>
-
-

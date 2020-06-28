@@ -1,0 +1,27 @@
+<div class="navegador">
+    <div>
+        <a routerLink="/" routerLinkActive="active-link"><img width="270px" height="60px" src="../../../../../assets/imgs/logo-angular.webp" alt=""></a>
+    </div>
+    <div id="enlaces">
+        <a routerLink="/allmovies" routerLinkActive="active-link">Todas las peliculas</a>
+        <a routerLink="/mostpopular" routerLinkActive="active-link">Más vistas</a>
+        <a routerLink="/lastmovies" routerLinkActive="active-link">Últimas peliculas</a>
+    
+    </div>
+    <div id="buscador-github">
+        <div id="contenedor-buscador">
+            <input class="buscador" type="text" name="buscador" placeholder="Busca una pelicula" (keyup) = "searchTitle($event)">
+            <i class="fas fa-search"></i>
+        </div>
+
+    </div>
+    <div>
+        <div id="registro-login">
+            <a routerLink="/login" routerLinkActive="active-link">Login</a>
+            <a routerLink="/signup" routerLinkActive="active-link">Registro</a>
+
+        </div>
+
+    </div>
+
+</div>

@@ -10,11 +10,11 @@ export class ListFilmsComponent implements OnInit {
   
   pelisMostrar:object;
 
-  constructor(public MovieService:MoviesService) { }
+  constructor(public MoviesService:MoviesService) { }
 
   ngOnInit() {
 
-      this.MovieService.getMovies()
+      this.MoviesService.getMovies()
       .subscribe(
         res=> this.pelisMostrar = res,
         error => console.error(error),
