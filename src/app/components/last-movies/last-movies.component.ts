@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/services/movies/movies.service'
 
 @Component({
   selector: 'app-last-movies',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LastMoviesComponent implements OnInit {
 
-  constructor() { }
+  pelisMostrar:object;
+  constructor(public MoviesService:MoviesService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.MoviesService.getLastFilms()
+    .subscribe(
+      res => this.pelisMostrar = res,
+      error => console.log(error),
+      () => console.log(this.pelisMostrar)
+    )
   }
 
 }

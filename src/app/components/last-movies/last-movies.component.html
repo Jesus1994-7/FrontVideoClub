@@ -1,1 +1,11 @@
-<p>last-movies works!</p>
+<div class="movies">
+    <div class="movie" *ngFor="let pelicula of pelisMostrar">
+        <a routerLink="/detail" routerLinkActive="active-link">
+            <img width="200" height="288" (click)="MoviesService.locateMovies(pelicula)"
+            src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}"
+            alt="poster">
+        </a>
+        <p>{{pelicula.title}}</p>
+    </div>
+
+</div>

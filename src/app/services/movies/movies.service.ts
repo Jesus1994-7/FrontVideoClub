@@ -20,7 +20,9 @@ export class MoviesService {
   getPopularMovies():Observable<any> {
     return this.httpClient.get(this.backUrl + 'mostpopular')
   }
-
+  getLastFilms():Observable<any> {
+    return this.httpClient.get(this.backUrl + 'lastmovies')
+  }
   locateMovies(MovieChoose:any):object {
     this.MoviesChoosen = MovieChoose;
     console.log(this.MoviesChoosen)
